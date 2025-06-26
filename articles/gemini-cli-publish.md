@@ -6,7 +6,7 @@ topics: ["cli", "gemini", "google", "AI"]
 published: true
 ---
 
-:::note warn
+:::message alert
 この記事は、筆者が Gemini CLI に対して行った一連の指示（プロンプト）によって、ほぼ自動的に生成されました。
 具体的には、Zennプロジェクトのセットアップ、記事ファイルの作成、マークダウン形式での本文執筆、そしてGitHubリポジトリへのプッシュまで、すべての操作をGemini CLIが実行しています。
 この記事自体が、Gemini CLIの能力を示すデモンストレーションとなっています。
