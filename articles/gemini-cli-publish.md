@@ -6,6 +6,9 @@ topics: ["cli", "gemini", "google", "zenn"]
 published: true
 ---
 
+> [!NOTE]
+> この記事は、筆者が Gemini CLI に指示を出し、ファイルの生成、記事の執筆、Zenn への公開作業までを Gemini CLI 自身に行わせる形で作成されました。
+
 # Gemini CLI を使って記事を公開する
 
 この記事では、Google の提供する`gemini-cli`を用いて、Zenn の記事を作成し公開するまでの手順を解説します。
