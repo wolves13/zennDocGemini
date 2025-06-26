@@ -66,16 +66,40 @@ gemini "「Gemini CLIを使って記事を公開する」というタイトル�
 
 特に、技術的な正確性や、自身の文体に合っているかなどをチェックしましょう。
 
-### Zennへのデプロイ
+### Zennへの公開
 
-記事の準備ができたら、Zennにデプロイします。
-以下のコマンドを実行すると、GitHubリポジトリと連携しているZennのコンテンツが更新されます。
+記事の準備ができたら、Zennに公開します。ZennはGitHubリポジトリと連携してコンテンツを公開するため、以下の手順でGitHubにプッシュします。
 
-```bash
-npx zenn-cli deploy
-```
+1.  **Gitリポジトリの初期化とコミット**
+    まだGitリポジトリでない場合は初期化し、変更をコミットします。
 
-これで、Gemini CLIを使ったZennの記事公開は完了です。
+    ```bash
+    git init
+    git add .
+    git commit -m "feat: Zenn記事の追加"
+    ```
+
+2.  **GitHubリポジトリの作成と連携**
+    GitHubで新しいリポジトリを作成し、ローカルリポジトリと連携させます。
+
+    ```bash
+    git remote add origin <GitHubリポジトリのURL>
+    git branch -M main
+    git push -u origin main
+    ```
+    `<GitHubリポジトリのURL>` は、ご自身のGitHubリポジトリのURLに置き換えてください。
+
+3.  **ZennとGitHubの連携設定**
+    Zennのダッシュボードにアクセスし、以下の手順でGitHubリポジトリを連携設定します。
+
+    -   Zennにログイン後、[ダッシュボード](https://zenn.dev/dashboard)へ移動します。
+    -   左サイドバーの「GitHub連携」をクリックします。
+    -   「新しいリポジトリを連携する」ボタンをクリックし、連携したいGitHubリポジトリを選択します。
+    -   連携が完了すると、選択したリポジトリの`main`ブランチにプッシュするたびにZennのコンテンツが自動的に更新され、記事が公開されます。
+
+    詳細な設定方法は、[Zenn公式ドキュメント](https://zenn.dev/zenn/articles/connect-to-github)もご参照ください。
+
+これで、Gemini CLIを使って作成したZennの記事が公開されます。
 
 ## まとめ
 
