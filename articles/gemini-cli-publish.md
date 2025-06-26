@@ -2,7 +2,7 @@
 title: "Gemini CLIを使って記事を公開する（Gemini CLIにやらせてみた）"
 emoji: "🤖"
 type: "tech"
-topics: ["cli", "gemini", "google", "zenn"]
+topics: ["cli", "gemini", "google", "AI"]
 published: true
 ---
 
